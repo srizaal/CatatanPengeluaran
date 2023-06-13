@@ -10,6 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.datapengeluaran.data.User
 import com.example.datapengeluaran.data.UserViewModel
 import com.example.datapengeluaran.databinding.FragmentAddBinding
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class AddFragment : Fragment() {
@@ -35,7 +37,7 @@ class AddFragment : Fragment() {
         return view
     }
 
-    private fun insertDataToDatabase(){
+    private fun insertDataToDatabase() {
 
         val tanggal = binding.inputTanggal.text.toString()
         val kategori = binding.inputKategori.text.toString()
@@ -43,9 +45,7 @@ class AddFragment : Fragment() {
         val keterangan = binding.inputKeterangan.text.toString()
 
 
-        val user = User(0,tanggal, kategori, jumlah, keterangan)
+        val user = User(0, tanggal, kategori, jumlah, keterangan)
         mUserViewModel.addUser(user)
-
     }
-
 }

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.datapengeluaran.AddFragment"
-        android:label="fragment_add"
+        android:label="Kembali"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
@@ -29,7 +29,7 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.example.datapengeluaran.UpdateFragment"
-        android:label="fragment_update"
+        android:label="Kembali"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
